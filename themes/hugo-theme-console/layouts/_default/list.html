@@ -1,13 +1,13 @@
 {{ define "main" }}
-<h1>{{ .Page.Title }}</h1>
+<!--<h1>{{ .Page.Title }}</h1>-->
 {{ .Content }}
 <div class="image-grid">
     {{ range sort .Data.Pages "Date" "desc" }}
         {{ if and (isset .Params "image") .Params.image }}
-            <a href="{{ .Permalink }}" title="{{ .Title }}">
+            <a href="{{ .Permalink }}" title="{{ .Title }}" class="image-link">
             {{ $image := .Page.Resources.GetMatch .Params.image }}
             {{ with $image }}
-                {{ $thumb := .Resize "400x" }}
+                {{ $thumb := .Resize "1600x" }}
                 <img src="{{ $thumb.RelPermalink }}" alt="{{ .Title }}" class="img-responsive">
             {{end}}
             </a>

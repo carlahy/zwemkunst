@@ -178,6 +178,10 @@ figure {
             minmax(calc(var(--page-width) / 4), 1fr));
 }
 
+.image-link:hover {
+    background-color: transparent;
+    opacity: 41%;
+}
 .terminal-prompt::after {
     -webkit-animation: cursor 1s infinite;
     animation: cursor 1s infinite;
