@@ -13,12 +13,12 @@ theme= 'hugo-theme-console'
   animateStyle = "animated zoomIn fast" 
 
   [[params.navlinks]]
-  name = "about/"
-  url = "about/"
+  name = "zwemkunst/"
+  url = "zwemkunst/"
 
   [[params.navlinks]]
-  name = "posts/"
-  url = "posts/"
+  name = "lavanderiasdelmundo/"
+  url = "lavanderiasdelmundo/"
   
   [[params.navlinks]]
   name = "photos/"
