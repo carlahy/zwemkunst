@@ -1,6 +1,25 @@
-baseURL = 'https://carlahy.github.io/zwemkunst/'
+baseurl = 'https://carlahy.github.io/zwemkunst/'
 languageCode = 'en-us'
 title = 'zwemkunst'
+theme= 'hugo-theme-console'
 
-theme= 'mini'
 
+[params]
+  # Cutting off the page title to two chars for mobile
+  # titleCutting = true
+
+  # Set the animation style -- https://animate.style/
+  # To disable animations, please remove or comment animationStyle parameter
+  animateStyle = "animated zoomIn fast" 
+
+  [[params.navlinks]]
+  name = "about/"
+  url = "about/"
+
+  [[params.navlinks]]
+  name = "posts/"
+  url = "posts/"
+  
+  [[params.navlinks]]
+  name = "photos/"
+  url = "photos/"
